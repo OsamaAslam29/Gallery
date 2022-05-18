@@ -1,0 +1,329 @@
+             /* Reset Css  */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+            /* Set Body's behavior */
+
+body{
+    /* scroll-behavior:smooth ; */
+}
+
+            /* Style header */
+
+header{
+    width: 100%;
+    height: 90vh;
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),
+                 url('pics/banner1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    
+    
+}
+            /* style nav bar  */
+
+nav{
+    width: 100%;
+                height: 80px;
+                background: white;
+                color: black;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0px 80px;
+                position: fixed;
+                top: 0;
+                z-index: 100;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+                overflow: hidden;
+}
+.logo{
+    font-size: 2.5em;
+    font-family: sans-serif;
+}
+.logo span{
+    color: orangered;
+}
+.menu a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+   
+}
+.menu a:first-child {
+    color: orangered;
+}
+.menu a:hover {
+    color: orangered;
+}
+.search i{
+    font-size: 20px;
+}
+.search i:hover{
+    color: orangered;
+}
+.search a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 7px 20px;
+    background: orangered;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: black;
+}
+.text{
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            transform: translate(-50%,-50%);
+}
+#camera{
+    font-size: 50px;
+}
+.text h1{
+    font-size: 2.8em;
+    font-family: sans-serif;
+}
+.text input{
+    width: 50%;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+button {
+            width: 20%; 
+            font-size: 20px;
+            padding: 10px 40px;
+            background: orangered;
+            margin-top: 30px;
+            border-radius: 5px;
+            border: none;
+}
+
+            /* style fortfolio menu  */
+
+.h-text{
+        padding: 100px;
+        overflow: hidden;
+    }
+    .portfolio{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.portfolio ul li{
+   list-style: none;
+   display: inline-block;
+   text-align: center;
+   padding: 10px 20px;
+   margin: 20px 0px;
+   cursor: pointer;
+   font-size: 20px;
+   font-weight: bold;
+   font-family: sans-serif;
+   transition: all 0.2s ease;
+   
+}
+.portfolio ul li:hover{
+  color: white;
+  background: orangered;
+  border-radius: 8px;
+}
+.portfolio ul li.active{
+  color: white;
+  background: orangered;
+  border-radius: 8px;
+}
+
+
+            /* style portfolio images */
+
+
+.portfolio-item{
+    width: 100%;
+    margin-left: 80px;
+}
+.portfolio-item .imag{
+    width: 360px;
+    height: 360px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+   
+   
+}
+.portfolio-item .imag img{
+    width: 100%;
+    height: 100%;
+    border-radius:8px ;
+}
+
+                /* Style information section */
+.member{
+    width: 100%;
+    font-family: sans-serif;
+    padding: 20px 100px;
+}
+.member-info{
+    text-align: center;
+    
+}
+.member-info h1{
+  font-size: 2.5em;
+    
+}
+.member-info h1 span{
+  color: orangered;
+    
+}
+
+.member-card{
+    text-align: center;
+    padding-top: 50px ;
+}
+.member-card img{
+ height: 140px;
+ width: 140px;
+ border-radius: 40px;
+ object-fit: cover;
+ object-position: top;
+}
+.para p{
+    margin: 20px 0px;
+    line-height: 2em;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+.heading h2{
+    text-align: center;
+}
+.logos {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.member-images{
+    width: 100%;
+    display: flex;
+    margin: 20px 0px;
+    overflow: hidden;
+}
+.member-images img{
+    width: 300px;
+    height: 200px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.member-images img:hover{
+   transform: scale(1.5);
+}
+            /* Style Footer */
+
+footer{
+    width: 100%;
+    background: #262626;
+    padding: 50px 100px;
+
+}
+.newsletter{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255,0.2);
+    color: white;
+
+}
+.newsletter>div{
+    flex-basis: 50%;
+}
+
+.ntext{
+    text-align: center;
+}
+
+.newsletter h2{
+    font-size: 2em;
+    font-family: sans-serif;
+    
+}
+.newsletter p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.newsletter label{
+    position: relative;
+}
+.newsletter input{
+    padding: 20px;
+    width: 70%;
+    border-radius:8px ;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+label .btn{
+    font-size: 20px;
+    color: white;
+    background-color: #e74c3c;
+    position: absolute;
+    left: 358px;
+    top: -48px;
+    padding: 16px;
+    width: 30%;
+    border: none;
+    outline: none;
+    border-radius: 1 8px 8px 0;
+
+
+}
+.contact{
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3em;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.contact>div{
+    flex-basis: 20%;
+
+}
+.contact p{
+    line-height: 2em;
+    font-size: 20px;
+    color: grey;
+    cursor: pointer;
+}
+.contact p:hover{
+   color: white;
+}
+.contact i{
+    background: white;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    margin: 20px 5px;
+    border-radius: 50%;
+    transition: 0.4s ease;
+}
+.contact i:hover{
+    background:transparent;
+    color: white;
+    border: 1px solid white;
+
+}
